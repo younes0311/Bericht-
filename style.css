@@ -1,0 +1,158 @@
+
+
+body{
+   background-image: url(background.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#menus{
+    display: flex;
+    position: relative;
+    top:250px;
+    justify-content: space-evenly;
+   
+}
+
+
+#menus div{
+
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#menus div img{
+    height: 250px;
+    transition: 0.3s;
+    border-radius: 10px;
+    animation: Bilder  2s ease-in-out;
+    box-shadow: 2px 2px 20px;
+    position: relative;
+   
+    /*display: none;*/
+  
+}
+
+#menus div img:hover{
+    box-shadow: 3px 3px 30px white;
+    height:330px;
+
+}
+
+#font{
+ 
+   display: flex;
+   justify-content: center;
+   position: relative;
+   top: 400px;
+}
+
+#font h1{
+     color: white;
+    -webkit-text-stroke: 2px black;
+    letter-spacing: 6px;
+    font-size: 65px;
+    animation: fonts 4s;
+    display: none;
+    z-index: 9;
+}
+
+
+@keyframes fonts{
+0%{transform: translateY(100px);opacity: 0%;}
+20%{transform: translateY(0);opacity: 100%;}
+}
+
+
+
+
+@keyframes Bilder{
+    0%{transform: translateY(140px);}
+
+    20%{transform: translateY(0px);}
+}
+
+
+#planet-nav{
+    display: none;
+    position: relative;
+    flex-direction: column;
+    bottom: 250px;
+ 
+
+}
+
+#planet-nav h1{
+    background: aqua;
+ z-index: 99;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+animation: nav1 2s ease-in;
+margin-bottom: 60px;
+padding: 0 20px;
+}
+
+#planet-nav div h1:hover{
+    transform: scale(1.15);
+ box-shadow: 2px 2px 20px red;
+}
+
+
+@keyframes nav1{
+    0%{transform: translateY(30px);}
+    20%{transform: translateY(0px);}
+}
+
+
+#planet-nav div{
+    display: flex;
+   align-items: center;
+
+   width: 120px;
+   height: 100px;
+justify-content: center;
+position: relative;
+left: 100px;
+
+}
+
+#planet-haus{
+    display: flex;
+justify-content: space-evenly;
+background-color: red;
+}
+#planet-haus div img{
+    height: 250px;
+display: none;
+position: absolute;
+bottom: 400px;
+left: 0px;
+border-radius:10px;
+transition: 0.5s;
+animation: Bilder 1s ease-in;
+box-shadow: 3px 3px 30px white;
+}
+#planet-haus div img:hover{
+box-shadow: 6px 6px 60px ;
+}
+
+
+
+
+
+#planet-haus div{
+    position: relative;
+background-color: red;
+right: 150px;
+}
+
+
+#planet-haus div #haus3{
+  left: 70px;
+}
